@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edit_bg">
+<TextView
+    android:id="@+id/tv_memchain_fgt_ftitle"
+    android:text="title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"/>
+    <TextView
+        android:id="@+id/tv_memchain_fgt_state"
+        android:text="state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:id="@+id/tv_memchain_fgt_ctime"
+        android:text="ctime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:id="@+id/tv_memchain_fgt_ftdetail"
+        android:text="ftdetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:id="@+id/tv_memchain_fgt_fpdetail"
+        android:text="fpdetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"/>
+
+</LinearLayout>

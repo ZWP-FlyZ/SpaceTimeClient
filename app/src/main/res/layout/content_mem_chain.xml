@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_mem_chain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.flyz.zwp.spacetime.activities.MemChainActivity"
+    tools:showIn="@layout/activity_mem_chain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/edit_bg"
+        >
+
+        <TextView
+            android:id="@+id/tv_chain_chainname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="chName"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_chain_chaindetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="chDetail"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_chain_chainstate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="chState"
+            android:layout_marginBottom="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+            <TextView
+                android:id="@+id/tv_chain_chainsTime"
+                android:text="开始时间"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_chain_chaineTime"
+                android:text="结束时间"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_chain_chaincTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ctime"
+            android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_chain_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="chain edit"
+        android:layout_below="@+id/sv_1"/>
+    <ListView
+        android:id="@+id/lv_chain_fgts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_chain_edit">
+    </ListView>
+</LinearLayout>

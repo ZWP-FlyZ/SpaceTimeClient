@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_ori">
+        <item>公元后</item>
+        <item>公元前</item>
+        <item>距今</item>
+    </string-array>
+
+    <string-array name="time_year_2">
+        <item>年</item>
+        <item>世纪</item>
+        <item>百年</item>
+        <item>千年</item>
+        <item>万年</item>
+        <item>百万年</item>
+        <item>千万年</item>
+        <item>亿年</item>
+    </string-array>
+
+    <string-array name="time_year_1">
+        <item>年</item>
+        <item>世纪</item>
+    </string-array>
+
+    <string-array name="more_date_et">
+        <item>输入秒！0&#8211;59秒</item>
+        <item>输入分钟！0&#8211;59分</item>
+        <item>输入小时！0&#8211;23时</item>
+        <item>输入日期！1&#8211;31日</item>
+        <item>输入月份！1&#8211;12月</item>
+        <item>输入结束</item>
+        <item>输入年代！0&#8211;9年代</item>
+    </string-array>
+
+    <string-array name="more_date_btn">
+        <item>添加秒</item>
+        <item>添加分钟</item>
+        <item>添加小时</item>
+        <item>添加日期</item>
+        <item>添加月份</item>
+        <item>完成</item>
+        <item>添加年代</item>
+    </string-array>
+
+</resources>

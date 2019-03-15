@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_time_crt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.flyz.zwp.spacetime.activities.TimeCrtActivity"
+    tools:showIn="@layout/activity_time_crt">
+
+    <LinearLayout
+        android:id="@+id/ll_time_crt_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_time_crt_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            />
+        <Button
+            android:id="@+id/btn_time_crt_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:text="重置"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_time_crt_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:layout_below="@+id/ll_time_crt_1"
+        android:visibility="gone"
+        >
+        <Spinner
+            android:id="@+id/spn_time_crt_ori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/time_ori"
+            />
+        <EditText
+            android:id="@+id/et_time_crt_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入数据"
+            android:layout_weight="1.2"
+            android:lines="1"
+            android:maxLength="9"
+            android:maxLines="1"
+            android:background="@drawable/edit_bg"
+            android:inputType="number"/>
+        <Spinner
+            android:id="@+id/spn_time_crt_year_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_time_crt_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50dp"
+        android:layout_below="@+id/ll_time_crt_2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_time_crt_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="1"
+            android:maxLength="9"
+            android:maxLines="1"
+            android:hint="添加数据"
+            android:background="@drawable/edit_bg"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/btn_time_crt_add_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="添加数据"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+</RelativeLayout>

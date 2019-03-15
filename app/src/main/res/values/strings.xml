@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SpaceTime</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_fgt_create">FgtCreateActivity</string>
+    <string name="title_activity_fgt_crt">FgtCrtActivity</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="title_activity_edit_user">EditUserActivity</string>
+    <string name="title_activity_mem_chain">MemChainActivity</string>
+    <string name="title_activity_mem_fragment">MemFragmentActivity</string>
+    <string name="title_activity_edit_chain">EditChainActivity</string>
+    <string name="title_activity_ma">MaActivity</string>
+    <string name="title_activity_mch_crt">MchCrtActivity</string>
+    <string name="title_activity_time_crt">TimeCrtActivity</string>
+    <string name="title_activity_manage_chain">ManageChainActivity</string>
+    <string name="title_activity_manage_fgt">ManageFgtActivity</string>
+    <string name="title_activity_loc_chose">LocChoseActivity</string>
+
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_mch_crt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.flyz.zwp.spacetime.activities.MchCrtActivity"
+    tools:showIn="@layout/activity_mch_crt">
+
+<EditText
+    android:id="@+id/et_mch_crt_mchname"
+    android:hint="memchain name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+
+    <EditText
+        android:id="@+id/et_mch_crt_mchdetail"
+        android:hint="memchain detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_mch_crt_mchname"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/et_mch_crt_mchdetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/cb_mch_crt_syn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="同步"
+            />
+        <CheckBox
+            android:id="@+id/cb_mch_crt_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="可见"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

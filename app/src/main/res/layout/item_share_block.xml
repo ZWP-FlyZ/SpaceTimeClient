@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_share_block_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tv_share_block_user_name"
+            android:text="USER_NAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_share_block_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_bg">
+
+        <TextView
+            android:id="@+id/tv_share_block_s_data1"
+            android:text="sData1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="3dp"
+            android:maxLines="1"/>
+        <TextView
+            android:id="@+id/tv_share_block_s_data2"
+            android:text="sData2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:maxLines="1"/>
+        <TextView
+            android:id="@+id/tv_share_block_s_data3"
+            android:text="sData3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginBottom="3dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="20dp"
+       >
+        <TextView
+            android:id="@+id/tv_share_block_s_time"
+            android:maxLines="1"
+            android:text="sTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+            <Button
+                android:id="@+id/btn_share_block_poker"
+                android:text="U"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                />
+            <TextView
+                android:id="@+id/tv_share_block_poker_c"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:maxLength="3"/>
+            <Button
+                android:id="@+id/btn_share_block_dpoker"
+                android:text="N"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                />
+            <TextView
+                android:id="@+id/tv_share_block_dpoker_c"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:maxLength="3"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
